@@ -49,7 +49,7 @@ def bar_search():
     search_results = search_connect.businesses[0].id
     return search_results
 
-def bar_business(search_results = " "):
+def bar_business(search_results):
     search_results = bar_search()
     params2 = {"lang": "en"}
     data = client.get_business(search_results, **params2)
