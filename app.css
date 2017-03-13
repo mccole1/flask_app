@@ -1,0 +1,88 @@
+body {
+    background-color: #fff2e6;
+}
+
+p {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 17px;
+}
+
+.header1 {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #ffcc99;
+    border: 2px solid black;
+    margin-right: 16em;
+    margin-left: 16em;
+}
+
+.header2 {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
+    background-color: #e6f2ff;
+    border: 1px solid black;
+    margin-right: 18em;
+    margin-left: 18em;
+}
+
+.liststyle {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
+    background-color: #e6f2ff;
+    border: 2px solid black;
+    margin-right: 18em;
+    margin-left: 18em;
+}
+
+#radiofont {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+}
+
+#tablefont {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 15px;
+}
+
+
+
+/*h1 {
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+}
+#description {
+    color: black;
+    font-weight: bold;
+}
+
+.emphasize {
+    background-color: #ffffcc;
+    text-align: center;
+}
+
+#border {
+    border: 2px solid black;
+    margin-right: 5em;
+    margin-left: 5em;
+}
+
+p {
+    text-align: center;
+}
+
+img{
+    margin: 40px;
+}
+
+form{
+    background-color: #ff6600;
+    border: 2px solid red;
+}
+
+.picture {
+    display: inline-block;
+    text-align: center;
+}
+*/
