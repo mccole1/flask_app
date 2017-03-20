@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+        body {
+            background-color: #fff2e6;
+        }
+
+        p {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 17px;
+        }
+
+        .header1 {
+            text-align: center;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            background-color: #ffcc99;
+            border: 2px solid black;
+            margin-right: 16em;
+            margin-left: 16em;
+        }
+
+        .header2 {
+            text-align: center;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 18px;
+            background-color: #e6f2ff;
+            border: 1px solid black;
+            margin-right: 18em;
+            margin-left: 18em;
+        }
+
+        .liststyle {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 18px;
+            background-color: #e6f2ff;
+            border: 2px solid black;
+            margin-right: 18em;
+            margin-left: 18em;
+        }
+
+        #radiofont {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 20px;
+        }
+
+        #tablefont {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 15px;
+        }
+    </style>
+      <title>Deal Search App</title>
+      <!-- <link rel="stylesheet" href="app.css"> -->
+      <img src="https://s3.amazonaws.com/cities-files/homepage/images/headers/odoe_pg_header_sf_02.jpg" alt="Image result for sf headers" onload="google.aft&amp;&amp;google.aft(this)" width="100%" height="100%" style="margin-top: 168px;">
+  </head>
+  <body>
+    <h1 class="header1">Where are the Deals?</h1>
+    <p class="header2">An app that helps you find the best deals at bars and restaurants in your neighborhood.<br>Please select from the following options:</p>
+    <form action="/zipsearch">
+        <label id="radiofont"><h3>Search by Zip Code:</h3></label>
+        <p>Enter Zip Code:</p><input type="text" name="zip" value="">
+        <input type="submit" value="Submit"></input>
+    </form>    
+    <br>
+    <br>
+    <form action="/restsearch">
+        <label id="radiofont"><h3>Search by Name:</h3></label>
+        <p>Enter Restaurant Name:</p><input type="text" name="rest" value="">
+        <input type="submit" value="Submit"></input>
+    </form>
+    <form action="/restanswer">
+        <!-- <label id="tablefont"><p></p><input type="text" name="yesno" value=""></label> -->
+        <!-- <input type="submit" value="Submit"></input> -->
+        <p>There is a deal at {{ choice }}!</p>
+            <label id="tablefont"><table>
+                <tbody>
+                    <tr>
+                        <td><strong>Deal:</strong></td>
+                        <td>{{ deal }}</td>
+                        <td><a href="{{ link }}" target="blank"</a>Buy Deal</td>
+                    </tr>
+                </tbody>
+            </table></label>
+        <p>Additional info:</p>
+            <label id="tablefont"><table>
+                <tbody>
+                    <tr>
+                        <td><strong>Rating:</strong></td>
+                        <td>{{ rating }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong># of Reviews:</strong></td>
+                        <td>{{ review }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Address:</strong></td>
+                        <td>{{ address }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Phone:</strong></td>
+                        <td>{{ phone }}</td>
+                    </tr>
+                </tbody>
+            </table></label>
+        </form>
+        <br>
+        <br>
+  </body>
+</html>
+
+
+
+
+
+
